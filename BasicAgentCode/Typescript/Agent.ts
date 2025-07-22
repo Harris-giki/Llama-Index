@@ -7,7 +7,7 @@ async function main() {
   // Set global LLM (optional, but useful for consistency)
   Settings.llm = gemini({
     apiKey: process.env.GOOGLE_API_KEY,
-    model: GEMINI_MODEL.GEMINI_2_0_FLASH,
+    model: GEMINI_MODEL.GEMINI_2_0_FLASH, // model
   });
 
   // Create a minimal agent without tools
@@ -15,7 +15,7 @@ async function main() {
     systemPrompt: "your name is bobby lashly", // this is setting the role of the llm
   });
 
-  let prompt: string = "who are you?";
+  let prompt: string = "who are you?"; // the user prompt
   // Run the agent
   const response = await myAgent.run(prompt);
   console.log(response.data.message);
