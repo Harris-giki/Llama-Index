@@ -10,9 +10,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@llamaindex/google": "^0.3.16",
+    "@llamaindex/huggingface": "^0.1.22",
+    "@llamaindex/openai": "^0.4.12",
+    "@llamaindex/readers": "^3.1.16",
+    "@llamaindex/workflow": "^1.1.17",
     "@types/node": "^24.0.15",
     "dotenv": "^17.2.0",
     "googleapis": "^153.0.0",
+    "llamaindex": "^0.11.21",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
