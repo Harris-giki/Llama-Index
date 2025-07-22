@@ -10,7 +10,7 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 # === Create Gemini LLM ===
 llm = GoogleGenAI(
     model="models/gemini-1.5-flash",
-    api_key=os.environ["GOOGLE_API_KEY"]
+    api_key=os.environ["GOOGLE_API_KEY"],
 )
 
 # === Main Event Loop ===

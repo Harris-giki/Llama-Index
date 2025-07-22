@@ -12,13 +12,13 @@ async function main() {
 
   // Create a minimal agent without tools
   const myAgent = agent({
-    description: "this is an agent", // this is not setting the role of the llm -> ask sir kashif about it
+    systemPrompt: "your name is bobby lashly", // this is setting the role of the llm
   });
 
   let prompt: string = "who are you?";
   // Run the agent
   const response = await myAgent.run(prompt);
-  console.log(response.data.message.content);
+  console.log(response.data.message);
 }
 
 main();
